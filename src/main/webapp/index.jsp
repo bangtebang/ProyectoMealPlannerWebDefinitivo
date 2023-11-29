@@ -115,7 +115,7 @@
 
 <div class="navbar">
     <a href="usuario.jsp">Mi Perfil</a>
-    <a href="***************">Crea tu plan</a>
+    <a href="registroUsuario.jsp">Registrar Usuario</a>
     <a href="catalogo.jsp">Catalogo de alimentos</a>
     <div class="search-container">
         <form action="/search" method="GET">
@@ -124,10 +124,6 @@
         </form>
     </div>
 </div>
-
-
-
-
 <div class="intro">
     <div class="intro__content" style="display: flex; align-items: center;">
         <div style="margin-right: 20px; display: flex; justify-content: center; align-items: center;">
