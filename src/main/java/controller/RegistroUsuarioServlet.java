@@ -11,14 +11,11 @@ import model.data.DBGenerator;
 import model.data.dao.UsuarioDAO;
 import org.jooq.DSLContext;
 
-import static model.data.DBGenerator.iniciarBD;
-import static model.data.dao.UsuarioDAO.agregarUsuario;
-
 @WebServlet(name = "registroUsuarioServlet", value = "/registroUsuario")
 public class RegistroUsuarioServlet extends HttpServlet {
     public void init() throws ServletException {
         try {
-            DBGenerator.iniciarBD("UsuariosBD");
+            DBGenerator.iniciarBD("MealPlannerBD");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -56,7 +53,7 @@ public class RegistroUsuarioServlet extends HttpServlet {
     }
 
     private boolean agregarUsuario(Usuario usuario) throws ClassNotFoundException {
-        DSLContext query = DBGenerator.conectarBD("UsuariosBD");
+        DSLContext query = DBGenerator.conectarBD("MealPlannerBD");
         List<Usuario> usuarios = UsuarioDAO.obtenerUsuario(query, "rut", usuario.getRut());
         if (usuarios.size() != 0) {
             return false;
