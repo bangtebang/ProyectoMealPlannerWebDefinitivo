@@ -9,13 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo validacion de datos">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo pequeñas correcciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroUsuarioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroUsuarioServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Alimento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Alimento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registroUsuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroUsuario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimetoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimentoDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +227,7 @@
       <workItem from="1701372509576" duration="289000" />
       <workItem from="1701373037314" duration="103000" />
       <workItem from="1701373177655" duration="792000" />
-      <workItem from="1701615089570" duration="310000" />
+      <workItem from="1701615089570" duration="2463000" />
     </task>
     <task id="LOCAL-00001" summary="subo rama master">
       <option name="closed" value="true" />
@@ -295,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701372665712</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="subo pequeñas correcciones">
+      <option name="closed" value="true" />
+      <created>1701615834107</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701615834107</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +325,7 @@
     <MESSAGE value="subo controlador de usuario, creador de base de datos de usuario y una interfaz muy simple para probrar la creacion del usuario" />
     <MESSAGE value="subo clase alimento" />
     <MESSAGE value="subo validacion de datos" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo validacion de datos" />
+    <MESSAGE value="subo pequeñas correcciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo pequeñas correcciones" />
   </component>
 </project>
