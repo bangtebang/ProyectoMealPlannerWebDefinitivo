@@ -4,13 +4,13 @@ public class Usuario {
     private String nombre;
     private int edad;
     private String rut;
-    private double peso;
+    private int peso;
     private double estatura;
     private String email;
     private String telefono;
     private String direccion;
     private String sexo;
-    public Usuario(String nombre, int edad, String rut,String sexo, double peso, double estatura, String email, String telefono, String direccion) {
+    public Usuario(String nombre, int edad, String rut,String sexo, int peso, double estatura, String email, String telefono, String direccion) {
         this.nombre = nombre;
         this.edad = edad;
         this.rut = rut;
@@ -47,10 +47,10 @@ public class Usuario {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-    public double getPeso() {
+    public int getPeso() {
         return this.peso;
     }
-    public void setPeso(double peso) {
+    public void setPeso(int peso) {
         this.peso = peso;
     }
     public double getEstatura() {

@@ -18,17 +18,17 @@
         <input name="sexo" type="radio" value="M" class="campoTexto">Masculino
         <input name="sexo" type="radio" value="F" class="campoTexto">Femenino
         <br><br>
-        <label>Peso:</label>
+        <label>Peso(kg):</label>
         <input name="peso" type="number" class="campoTexto">
-        <label>Estatura:</label>
-        <input name="estatura" type="number" class="campoTexto">
+        <label>Estatura(mts,cm):</label>
+        <input name="estatura" type="number" class="campoTexto" step="0.01">
         <br><br>
-        <label>email:</label>
+        <label>Email:</label>
         <input name="email" type="email" class="campoTexto">
-        <label>telefono:</label>
+        <label>Telefono:</label>
         <input name="telefono" type="text" class="campoTexto">
         <br><br>
-        <label>direccion:</label>
+        <label>Direccion:</label>
         <input name="direccion" type="text" class="campoTexto">
         <br><br>
         <input type="submit" value="enviar" class="boton">

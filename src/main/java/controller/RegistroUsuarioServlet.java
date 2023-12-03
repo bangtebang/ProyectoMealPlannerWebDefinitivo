@@ -35,7 +35,7 @@ public class RegistroUsuarioServlet extends HttpServlet {
                 int edad = Integer.parseInt(req.getParameter("edad"));
                 String rut = req.getParameter("rut");
                 String sexo = req.getParameter("sexo");
-                double peso = Double.parseDouble(req.getParameter("peso"));
+                int peso = Integer.parseInt(req.getParameter("peso"));
                 double estatura = Double.parseDouble(req.getParameter("estatura"));
                 String email = req.getParameter("email");
                 String telefono = req.getParameter("telefono");
@@ -69,7 +69,6 @@ public class RegistroUsuarioServlet extends HttpServlet {
             int edad = Integer.parseInt(req.getParameter("edad"));
             double peso = Double.parseDouble(req.getParameter("peso"));
             double estatura = Double.parseDouble(req.getParameter("estatura"));
-
             if (edad <= 0 || peso <= 0 || estatura <= 0) {
                 return false;
             }

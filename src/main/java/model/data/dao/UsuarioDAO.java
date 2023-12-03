@@ -41,7 +41,7 @@ public class UsuarioDAO {
             String nombre = (String) resultados.getValue(fila,"nombre");
             int edad = (int) resultados.getValue(fila,"edad");
             String sexo = (String) resultados.getValue(fila,"sexo");
-            double peso = (double) resultados.getValue(fila,"peso");
+            int peso = (int) resultados.getValue(fila,"peso");
             double estatura = (double) resultados.getValue(fila,"estatura");
             String email = (String) resultados.getValue(fila,"email");
             String telefono = (String) resultados.getValue(fila,"telefono");

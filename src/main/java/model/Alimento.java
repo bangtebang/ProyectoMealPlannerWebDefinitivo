@@ -97,5 +97,4 @@ public class Alimento {
         this.usuario = usuario;
         this.fecha = fecha;
     }
-
 }
