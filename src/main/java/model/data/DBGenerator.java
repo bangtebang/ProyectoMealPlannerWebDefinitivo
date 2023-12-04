@@ -57,6 +57,7 @@ public class DBGenerator {
                 .column("sodio",DOUBLE)
                 .column("fibra",DOUBLE)
                 .column("vegetariano",BOOLEAN)
+                .column("fecha",TIMESTAMP)
                 .constraint(primaryKey("nombre")).execute();
     }
     private static void agregarColumnaTabla(DSLContext create, String nombreTabla, String columna, DataType tipoColumna){

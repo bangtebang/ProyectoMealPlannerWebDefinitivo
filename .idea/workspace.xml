@@ -9,8 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo correcciones">
+    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo creacion de alimento momentaneo sin fecha aun">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/mealplanner.r5zWqQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/mealplanner.r5zWqQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Alimento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Alimento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimentoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimentoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registroAlimento.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroAlimento.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +236,7 @@
       <workItem from="1701620541071" duration="1327000" />
       <workItem from="1701650979346" duration="1284000" />
       <workItem from="1701652291068" duration="2727000" />
-      <workItem from="1701655048701" duration="5608000" />
+      <workItem from="1701655048701" duration="7633000" />
     </task>
     <task id="LOCAL-00001" summary="subo rama master">
       <option name="closed" value="true" />
@@ -327,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701659922041</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="subo creacion de alimento momentaneo sin fecha aun">
+      <option name="closed" value="true" />
+      <created>1701661033324</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701661033324</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +369,7 @@
     <MESSAGE value="subo pequeñas correcciones" />
     <MESSAGE value="subo lo referente a la clase alimento" />
     <MESSAGE value="subo correcciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo correcciones" />
+    <MESSAGE value="subo creacion de alimento momentaneo sin fecha aun" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo creacion de alimento momentaneo sin fecha aun" />
   </component>
 </project>

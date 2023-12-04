@@ -48,7 +48,15 @@ public class RegistroAlimentoServlet extends HttpServlet {
                 double sodio = Double.parseDouble(req.getParameter("sodio"));
                 double fibra = Double.parseDouble(req.getParameter("fibra"));
                 boolean vegetariano = Boolean.parseBoolean(req.getParameter("vegetariano"));
-                Alimento alimento = new Alimento(nombre,calorias, gramos, proteinas, hidratosDeCarbono, azucares, sodio, fibra, vegetariano);
+                String fechaString = req.getParameter("fecha");
+                SimpleDateFormat formatoFecha = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                Date fecha = null;
+                try {
+                    fecha = formatoFecha.parse(fechaString);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                Alimento alimento = new Alimento(nombre,calorias, gramos, proteinas, hidratosDeCarbono, azucares, sodio, fibra, vegetariano,fecha);
                 if (agregarAlimento(alimento)) {
                     req.setAttribute("alimento",alimento);
                     respuesta = req.getRequestDispatcher("registroValidoAlimento.jsp");

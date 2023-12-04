@@ -12,15 +12,15 @@ import static org.jooq.impl.DSL.*;
 public class AlimentoDAO {
     public static void agregarAlimento(DSLContext query, Alimento alimento){
         Table tablaAlimento= table(name("Alimento"));
-        Field[] columnas = tablaAlimento.fields("nombre","calorias","gramos","proteinas","hidratosDeCarbono","azucares","sodio","fibra","vegetariano");
-        query.insertInto(tablaAlimento, columnas[0], columnas[1],columnas[2],columnas[3],columnas[4],columnas[5],columnas[6],columnas[7],columnas[8])
-                .values(alimento.getNombre(),alimento.getCalorias(),alimento.getGramos(),alimento.getProteinas(),alimento.getHidratosDeCarbono(),alimento.getAzucares(),alimento.getSodio(),alimento.getFibra(),alimento.isVegetariano())
+        Field[] columnas = tablaAlimento.fields("nombre","calorias","gramos","proteinas","hidratosDeCarbono","azucares","sodio","fibra","vegetariano","fecha");
+        query.insertInto(tablaAlimento, columnas[0], columnas[1],columnas[2],columnas[3],columnas[4],columnas[5],columnas[6],columnas[7],columnas[8],columnas[9])
+                .values(alimento.getNombre(),alimento.getCalorias(),alimento.getGramos(),alimento.getProteinas(),alimento.getHidratosDeCarbono(),alimento.getAzucares(),alimento.getSodio(),alimento.getFibra(),alimento.isVegetariano(),alimento.getFecha())
                 .execute();
     }
 
     public void modificarAlimento(DSLContext query, String rut, String columnaTabla, Object dato){
         query.update(DSL.table("Alimento")).set(DSL.field(columnaTabla),dato).
-                where(DSL.field("rut").eq(rut)).execute();
+                where(DSL.field("nombre").eq(rut)).execute();
     }
     public static List obtenerAlimento(DSLContext query, String columnaTabla, Object dato){
         Result resultados = query.select().from(DSL.table("Alimento")).where(DSL.field(columnaTabla).eq(dato)).fetch();
@@ -32,7 +32,7 @@ public class AlimentoDAO {
     }
     public void eliminarAlimento(DSLContext query, String rut){
         Table tablaAlimento= table(name("Alimento"));
-        query.delete(DSL.table("Alimento")).where(DSL.field("rut").eq(rut)).execute();
+        query.delete(DSL.table("Alimento")).where(DSL.field("nombre").eq(rut)).execute();
     }
     private static List obtenerListaAlimentos(Result resultados){
         List<Alimento> alimentos= new ArrayList<>();
@@ -46,17 +46,10 @@ public class AlimentoDAO {
             double sodio = (double) resultados.getValue(fila,"sodio");
             double fibra = (double) resultados.getValue(fila,"fibra");
             boolean vegetariano = (boolean) resultados.getValue(fila,"vegetariano");
-            alimentos.add(new Alimento(nombre,calorias,gramos,proteinas,hidratosDeCarbono,azucares,sodio,fibra,vegetariano));
+            Date fecha = (Date) resultados.getValue(fila,"fecha");
+            alimentos.add(new Alimento(nombre,calorias,gramos,proteinas,hidratosDeCarbono,azucares,sodio,fibra,vegetariano,fecha));
         }
         return alimentos;
-    }
-    private static String[][] exportardatos(Result resultados){
-        String[][] datosResultado=new String[resultados.size()][4];
-        for(int registro = 0; registro < resultados.size(); registro ++){
-            datosResultado[registro][0] = (String) resultados.getValue(registro,"nombre");
-            datosResultado[registro][1] = (String) resultados.getValue(registro,"edad");
-        }
-        return datosResultado;
     }
     public static boolean validarExistenciaAlimento(DSLContext query,String columnaTabla, Object dato){
         Result resultados = query.select().from(DSL.table("Alimento")).where(DSL.field(columnaTabla).eq(dato)).fetch();

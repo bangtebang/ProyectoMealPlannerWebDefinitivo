@@ -1150,8 +1150,8 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="327" parent="1" name="mealplanner">
-      <IntrospectionTimestamp>2023-12-03.21:33:10</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-12-04.03:33:10</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-12-03.22:08:35</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-12-04.04:08:35</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="328" parent="1" name="mysql">
@@ -1229,59 +1229,66 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <DasType>tinyint(1)|0s</DasType>
       <Position>9</Position>
     </column>
-    <index id="349" parent="338" name="PRIMARY">
+    <column id="349" parent="338" name="fecha">
+      <DasType>timestamp|0s</DasType>
+      <DefaultExpression>current_timestamp()</DefaultExpression>
+      <NotNull>1</NotNull>
+      <OnUpdate>current_timestamp()</OnUpdate>
+      <Position>10</Position>
+    </column>
+    <index id="350" parent="338" name="PRIMARY">
       <ColNames>nombre</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="350" parent="338" name="PRIMARY">
+    <key id="351" parent="338" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="351" parent="339" name="rut">
+    <column id="352" parent="339" name="rut">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="352" parent="339" name="nombre">
+    <column id="353" parent="339" name="nombre">
       <DasType>varchar(100)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="353" parent="339" name="edad">
+    <column id="354" parent="339" name="edad">
       <DasType>int(11)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="354" parent="339" name="sexo">
+    <column id="355" parent="339" name="sexo">
       <DasType>varchar(50)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="355" parent="339" name="peso">
+    <column id="356" parent="339" name="peso">
       <DasType>int(11)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="356" parent="339" name="estatura">
+    <column id="357" parent="339" name="estatura">
       <DasType>double|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="357" parent="339" name="email">
+    <column id="358" parent="339" name="email">
       <DasType>varchar(100)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="358" parent="339" name="telefono">
+    <column id="359" parent="339" name="telefono">
       <DasType>varchar(50)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="359" parent="339" name="direccion">
+    <column id="360" parent="339" name="direccion">
       <DasType>varchar(100)|0s</DasType>
       <Position>9</Position>
     </column>
-    <index id="360" parent="339" name="PRIMARY">
+    <index id="361" parent="339" name="PRIMARY">
       <ColNames>rut</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="361" parent="339" name="PRIMARY">
+    <key id="362" parent="339" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

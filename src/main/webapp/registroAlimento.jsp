@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body> <h1 class="encabezado">Registro alimento</h1>
-<form action="registroAlimento" method="post">
+<form id="formulario" action="registroAlimento" method="post">
     <div class="centrado">
         <label>Nombre:</label>
         <input type="text" name="nombre" class="campoTexto">
@@ -33,8 +33,17 @@
         <label>Vegetariano:</label>
         <input type="checkbox" name="vegetariano">
         <br>
+        <input type="hidden" name="fecha" id="fecha">
         <input type="submit" value="enviar" class="boton">
     </div>
 </form>
+<script>
+    var formulario = document.getElementById("formulario");
+    formulario.addEventListener("submit", function(event) {
+        var inputFecha = document.getElementById("fecha");
+        var fechaActual = new Date();
+        inputFecha.value = fechaActual.getFullYear() + "-" + (fechaActual.getMonth() + 1) + "-" + fechaActual.getDate() + " " + fechaActual.getHours() + ":" + fechaActual.getMinutes() + ":" + fechaActual.getSeconds();
+    });
+</script>
 </body>
 </html>
