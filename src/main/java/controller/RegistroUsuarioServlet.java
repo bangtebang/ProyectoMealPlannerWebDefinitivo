@@ -40,9 +40,7 @@ public class RegistroUsuarioServlet extends HttpServlet {
                 String email = req.getParameter("email");
                 String telefono = req.getParameter("telefono");
                 String direccion = req.getParameter("direccion");
-
                 Usuario usuario = new Usuario(nombre, edad, rut, sexo, peso, estatura, email, telefono, direccion);
-
                 if (agregarUsuario(usuario)) {
                     req.setAttribute("usuario", usuario);
                     respuesta = req.getRequestDispatcher("registroValido.jsp");
@@ -67,7 +65,7 @@ public class RegistroUsuarioServlet extends HttpServlet {
     private boolean validarDatos(HttpServletRequest req) {
         try {
             int edad = Integer.parseInt(req.getParameter("edad"));
-            double peso = Double.parseDouble(req.getParameter("peso"));
+            int peso = Integer.parseInt(req.getParameter("peso"));
             double estatura = Double.parseDouble(req.getParameter("estatura"));
             if (edad <= 0 || peso <= 0 || estatura <= 0) {
                 return false;

@@ -1,6 +1,8 @@
 package controller;
 
 import java.io.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -45,8 +47,12 @@ public class RegistroAlimentoServlet extends HttpServlet {
                 double sodio = Double.parseDouble(req.getParameter("sodio"));
                 double fibra = Double.parseDouble(req.getParameter("fibra"));
                 boolean vegetariano = Boolean.parseBoolean(req.getParameter("vegetariano"));
-                Date fecha = new Date();
-
+                Date fecha = null;
+                try {
+                    fecha = new SimpleDateFormat("dd/MM/yyyy").parse(req.getParameter("fecha"));
+                } catch (ParseException e) {
+                    throw new RuntimeException(e);
+                }
                 Alimento alimento = new Alimento(nombre, calorias, gramos, proteinas, hidratosDeCarbono, azucares, sodio, fibra, vegetariano,fecha,null);
                 if (agregarAlimento(alimento)) {
                     req.setAttribute("alimento",alimento);
@@ -78,7 +84,7 @@ public class RegistroAlimentoServlet extends HttpServlet {
             double azucares = Double.parseDouble(req.getParameter("azucares"));
             double sodio = Double.parseDouble(req.getParameter("sodio"));
             double fibra = Double.parseDouble(req.getParameter("fibra"));
-            if (Double.parseDouble(req.getParameter("calorias")) <= 0 || Double.parseDouble(req.getParameter("gramos")) <= 0 || Double.parseDouble(req.getParameter("proteinas")) <= 0 || Double.parseDouble(req.getParameter("hidratosDeCarbono")) <= 0 || Double.parseDouble(req.getParameter("azucares")) <= 0 || Double.parseDouble(req.getParameter("sodio")) <= 0 || Double.parseDouble(req.getParameter("fibra")) <= 0) {
+            if (Double.parseDouble(req.getParameter("calorias")) < 0 || Double.parseDouble(req.getParameter("gramos")) < 0 || Double.parseDouble(req.getParameter("proteinas")) < 0 || Double.parseDouble(req.getParameter("hidratosDeCarbono")) < 0 || Double.parseDouble(req.getParameter("azucares")) < 0 || Double.parseDouble(req.getParameter("sodio")) < 0 || Double.parseDouble(req.getParameter("fibra")) < 0) {
                 return false;
             }
 

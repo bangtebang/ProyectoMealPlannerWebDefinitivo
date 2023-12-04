@@ -30,8 +30,17 @@
         <label>Vegetariano:</label>
         <input type="checkbox" name="vegetariano">
         <br>
+        <input type="hidden" name="fecha" id="fecha">
         <input type="submit" value="enviar" class="boton">
     </div>
 </form>
+<script>
+    var formulario = document.getElementById("formulario");
+    formulario.addEventListener("submit", function(event) {
+        var inputFecha = document.getElementById("fecha");
+        var fechaActual = new Date();
+        inputFecha.value = fechaActual.getFullYear() + "-" + (fechaActual.getMonth() + 1) + "-" + fechaActual.getDate() + " " + fechaActual.getHours() + ":" + fechaActual.getMinutes() + ":" + fechaActual.getSeconds();
+    });
+</script>
 </body>
 </html>

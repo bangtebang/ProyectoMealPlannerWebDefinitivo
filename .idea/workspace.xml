@@ -9,11 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo pequeñas correcciones">
+    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo lo referente a la clase alimento">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7de9224-dc65-45c6-b7e9-a06f17968e4c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7de9224-dc65-45c6-b7e9-a06f17968e4c/storage_v2/_src_/schema/fifa.vvQvAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7de9224-dc65-45c6-b7e9-a06f17968e4c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7de9224-dc65-45c6-b7e9-a06f17968e4c/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7de9224-dc65-45c6-b7e9-a06f17968e4c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7de9224-dc65-45c6-b7e9-a06f17968e4c/storage_v2/_src_/schema/usuariosbd.B9L4jQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Alimento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Alimento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimetoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimentoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroUsuarioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroUsuarioServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registroAlimento.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroAlimento.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registroErroneo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroErroneo.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -227,7 +238,10 @@
       <workItem from="1701372509576" duration="289000" />
       <workItem from="1701373037314" duration="103000" />
       <workItem from="1701373177655" duration="792000" />
-      <workItem from="1701615089570" duration="2463000" />
+      <workItem from="1701615089570" duration="3059000" />
+      <workItem from="1701620541071" duration="1327000" />
+      <workItem from="1701650979346" duration="1284000" />
+      <workItem from="1701652291068" duration="1667000" />
     </task>
     <task id="LOCAL-00001" summary="subo rama master">
       <option name="closed" value="true" />
@@ -301,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701615834107</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="subo lo referente a la clase alimento">
+      <option name="closed" value="true" />
+      <created>1701618139998</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701618139998</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +348,7 @@
     <MESSAGE value="subo clase alimento" />
     <MESSAGE value="subo validacion de datos" />
     <MESSAGE value="subo pequeñas correcciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo pequeñas correcciones" />
+    <MESSAGE value="subo lo referente a la clase alimento" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo lo referente a la clase alimento" />
   </component>
 </project>

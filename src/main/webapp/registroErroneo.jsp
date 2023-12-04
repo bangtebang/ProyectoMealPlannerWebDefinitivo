@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<h1 class="encabezado">Registro de persona invalido</h1>
+<h1 class="encabezado">Registro invalido</h1>
 <h2 class="subtitulo">Datos Incorrectos,favor comprobar nuevamente</h2>
 <form action="registroEvento" method="post">
     <div class="centrado">

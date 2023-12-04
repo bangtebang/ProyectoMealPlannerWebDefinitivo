@@ -114,9 +114,11 @@
 <body>
 
 <div class="navbar">
-    <a href="usuario.jsp">Mi Perfil</a>
     <a href="registroUsuario.jsp">Registrar Usuario</a>
+    <a href="usuario.jsp">Mi Perfil</a>
+    <a href="registroAlimento.jsp">Registrar Alimento</a>
     <a href="catalogo.jsp">Catalogo de alimentos</a>
+    <a href="***************">Crea tu plan</a>
     <div class="search-container">
         <form action="/search" method="GET">
             <input type="text" placeholder="Buscar..." name="search">
