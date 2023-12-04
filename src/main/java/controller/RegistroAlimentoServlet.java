@@ -18,11 +18,13 @@ import model.data.dao.AlimentoDAO;
 import model.data.dao.UsuarioDAO;
 import org.jooq.DSLContext;
 
+import static com.mysql.cj.protocol.a.MysqlTextValueDecoder.getDate;
+
 @WebServlet(name = "registroAlimentoServlet", value = "/registroAlimento")
 public class RegistroAlimentoServlet extends HttpServlet {
     public void init() throws ServletException {
         try {
-            DBGenerator.iniciarBD("MealPlannerBD");
+            DBGenerator.iniciarBD("MealPlanner");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -35,7 +37,6 @@ public class RegistroAlimentoServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher respuesta = req.getRequestDispatcher("/registroErroneo.jsp");
-
         try {
             if (validarParametros(req) && validarDatos(req)) {
                 String nombre = req.getParameter("nombre");
@@ -47,13 +48,7 @@ public class RegistroAlimentoServlet extends HttpServlet {
                 double sodio = Double.parseDouble(req.getParameter("sodio"));
                 double fibra = Double.parseDouble(req.getParameter("fibra"));
                 boolean vegetariano = Boolean.parseBoolean(req.getParameter("vegetariano"));
-                Date fecha = null;
-                try {
-                    fecha = new SimpleDateFormat("dd/MM/yyyy").parse(req.getParameter("fecha"));
-                } catch (ParseException e) {
-                    throw new RuntimeException(e);
-                }
-                Alimento alimento = new Alimento(nombre, calorias, gramos, proteinas, hidratosDeCarbono, azucares, sodio, fibra, vegetariano,fecha,null);
+                Alimento alimento = new Alimento(nombre, calorias, gramos, proteinas, hidratosDeCarbono, azucares, sodio, fibra, vegetariano);
                 if (agregarAlimento(alimento)) {
                     req.setAttribute("alimento",alimento);
                     respuesta = req.getRequestDispatcher("registroValido.jsp");
@@ -64,7 +59,6 @@ public class RegistroAlimentoServlet extends HttpServlet {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-
         respuesta.forward(req, resp);
     }
 
@@ -72,8 +66,7 @@ public class RegistroAlimentoServlet extends HttpServlet {
         return req.getParameter("nombre") != null && req.getParameter("calorias") != null &&
                 req.getParameter("gramos") != null && req.getParameter("proteinas") != null &&
                 req.getParameter("hidratosDeCarbono") != null && req.getParameter("azucares") != null &&
-                req.getParameter("sodio") != null && req.getParameter("fibra") != null &&
-                req.getParameter("vegetariano") != null;
+                req.getParameter("sodio") != null && req.getParameter("fibra") != null;
     }
     private boolean validarDatos(HttpServletRequest req) {
         try {
@@ -84,7 +77,7 @@ public class RegistroAlimentoServlet extends HttpServlet {
             double azucares = Double.parseDouble(req.getParameter("azucares"));
             double sodio = Double.parseDouble(req.getParameter("sodio"));
             double fibra = Double.parseDouble(req.getParameter("fibra"));
-            if (Double.parseDouble(req.getParameter("calorias")) < 0 || Double.parseDouble(req.getParameter("gramos")) < 0 || Double.parseDouble(req.getParameter("proteinas")) < 0 || Double.parseDouble(req.getParameter("hidratosDeCarbono")) < 0 || Double.parseDouble(req.getParameter("azucares")) < 0 || Double.parseDouble(req.getParameter("sodio")) < 0 || Double.parseDouble(req.getParameter("fibra")) < 0) {
+            if (calorias <= 0 || gramos <= 0 || proteinas < 0 || hidratosDeCarbono < 0 || azucares < 0 || sodio < 0 || fibra < 0) {
                 return false;
             }
 
@@ -92,12 +85,11 @@ public class RegistroAlimentoServlet extends HttpServlet {
             e.printStackTrace();
             return false;
         }
-
         return true;
     }
 
     private boolean agregarAlimento(Alimento alimento) throws ClassNotFoundException {
-        DSLContext query = DBGenerator.conectarBD("MealPlannerBD");
+        DSLContext query = DBGenerator.conectarBD("MealPlanner");
         List<Alimento> alimentos = AlimentoDAO.obtenerAlimento(query, "nombre", alimento.getNombre());
         if (alimentos.size() != 0) {
             return false;

@@ -7,40 +7,34 @@
 <form action="registroAlimento" method="post">
     <div class="centrado">
         <label>Nombre:</label>
-        <input type="text" name="nombre" required>
+        <input type="text" name="nombre" class="campoTexto">
         <br>
         <label>Calorias:</label>
-        <input type="number" name="calorias" required>
+        <input type="number" name="calorias" class="campoTexto" step="0.01">
+        <br>
+        <label>Gramos:</label>
+        <input type="number" name="gramos" class="campoTexto" step="0.01">
         <br>
         <label>Proteinas:</label>
-        <input type="number" name="proteinas" required>
+        <input type="number" name="proteinas" class="campoTexto" step="0.01" >
         <br>
         <label>Carbohidratos:</label>
-        <input type="number" name="carbohidratos" required>
+        <input type="number" name="hidratosDeCarbono"  class="campoTexto" step="0.01">
         <br>
         <label>Azúcares:</label>
-        <input type="number" name="azucares" required>
+        <input type="number" name="azucares" class="campoTexto" step="0.01">
         <br>
         <label>Sodio:</label>
-        <input type="number" name="sodio" required>
+        <input type="number" name="sodio" class="campoTexto" step="0.01">
         <br>
         <label>Fibra:</label>
-        <input type="number" name="fibra" required>
+        <input type="number" name="fibra" class="campoTexto" step="0.01">
         <br>
         <label>Vegetariano:</label>
         <input type="checkbox" name="vegetariano">
         <br>
-        <input type="hidden" name="fecha" id="fecha">
         <input type="submit" value="enviar" class="boton">
     </div>
 </form>
-<script>
-    var formulario = document.getElementById("formulario");
-    formulario.addEventListener("submit", function(event) {
-        var inputFecha = document.getElementById("fecha");
-        var fechaActual = new Date();
-        inputFecha.value = fechaActual.getFullYear() + "-" + (fechaActual.getMonth() + 1) + "-" + fechaActual.getDate() + " " + fechaActual.getHours() + ":" + fechaActual.getMinutes() + ":" + fechaActual.getSeconds();
-    });
-</script>
 </body>
 </html>

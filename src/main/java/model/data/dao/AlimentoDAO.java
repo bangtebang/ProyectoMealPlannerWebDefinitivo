@@ -4,6 +4,7 @@ import org.jooq.*;
 import org.jooq.impl.DSL;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import static org.jooq.impl.DSL.*;
@@ -11,9 +12,9 @@ import static org.jooq.impl.DSL.*;
 public class AlimentoDAO {
     public static void agregarAlimento(DSLContext query, Alimento alimento){
         Table tablaAlimento= table(name("Alimento"));
-        Field[] columnas = tablaAlimento.fields("nombre","calorias","gramos","proteinas","hidratosDeCarbono","azucares","sodio","fibra","vegetariano","fecha");
-        query.insertInto(tablaAlimento, columnas[0], columnas[1],columnas[2],columnas[3],columnas[4],columnas[5],columnas[6],columnas[7],columnas[8],columnas[9])
-                .values(alimento.getNombre(),alimento.getCalorias(),alimento.getGramos(),alimento.getProteinas(),alimento.getHidratosDeCarbono(),alimento.getAzucares(),alimento.getSodio(),alimento.getFibra(),alimento.isVegetariano(),alimento.getFecha())
+        Field[] columnas = tablaAlimento.fields("nombre","calorias","gramos","proteinas","hidratosDeCarbono","azucares","sodio","fibra","vegetariano");
+        query.insertInto(tablaAlimento, columnas[0], columnas[1],columnas[2],columnas[3],columnas[4],columnas[5],columnas[6],columnas[7],columnas[8])
+                .values(alimento.getNombre(),alimento.getCalorias(),alimento.getGramos(),alimento.getProteinas(),alimento.getHidratosDeCarbono(),alimento.getAzucares(),alimento.getSodio(),alimento.getFibra(),alimento.isVegetariano())
                 .execute();
     }
 
@@ -45,7 +46,7 @@ public class AlimentoDAO {
             double sodio = (double) resultados.getValue(fila,"sodio");
             double fibra = (double) resultados.getValue(fila,"fibra");
             boolean vegetariano = (boolean) resultados.getValue(fila,"vegetariano");
-            alimentos.add(new Alimento(nombre,calorias,gramos,proteinas,hidratosDeCarbono,azucares,sodio,fibra,vegetariano,null,null));
+            alimentos.add(new Alimento(nombre,calorias,gramos,proteinas,hidratosDeCarbono,azucares,sodio,fibra,vegetariano));
         }
         return alimentos;
     }

@@ -15,7 +15,7 @@ import org.jooq.DSLContext;
 public class RegistroUsuarioServlet extends HttpServlet {
     public void init() throws ServletException {
         try {
-            DBGenerator.iniciarBD("MealPlannerBD");
+            DBGenerator.iniciarBD("MealPlanner");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -28,7 +28,6 @@ public class RegistroUsuarioServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher respuesta = req.getRequestDispatcher("/registroErroneo.jsp");
-
         try {
             if (validarParametros(req) && validarDatos(req)) {
                 String nombre = req.getParameter("nombre");
@@ -78,9 +77,8 @@ public class RegistroUsuarioServlet extends HttpServlet {
 
         return true;
     }
-
     private boolean agregarUsuario(Usuario usuario) throws ClassNotFoundException {
-        DSLContext query = DBGenerator.conectarBD("MealPlannerBD");
+        DSLContext query = DBGenerator.conectarBD("MealPlanner");
         List<Usuario> usuarios = UsuarioDAO.obtenerUsuario(query, "rut", usuario.getRut());
         if (usuarios.size() != 0) {
             return false;

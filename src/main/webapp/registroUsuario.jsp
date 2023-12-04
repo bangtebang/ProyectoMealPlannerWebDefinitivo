@@ -20,6 +20,7 @@
         <br><br>
         <label>Peso(kg):</label>
         <input name="peso" type="number" class="campoTexto">
+        <br>
         <label>Estatura(mts,cm):</label>
         <input name="estatura" type="number" class="campoTexto" step="0.01">
         <br><br>

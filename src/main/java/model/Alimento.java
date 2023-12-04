@@ -78,7 +78,7 @@ public class Alimento {
         this.fibra = fibra;
     }
     public Alimento(String nombre, double calorias, double gramos, double proteinas, double hidratosDeCarbono,
-                    double azucares, double sodio, double fibra, boolean vegetariano,Date fecha, Usuario usuario) {
+                    double azucares, double sodio, double fibra, boolean vegetariano) {
         this.nombre = nombre;
         this.calorias = calorias;
         this.gramos = gramos;
@@ -88,14 +88,6 @@ public class Alimento {
         this.sodio = sodio;
         this.fibra = fibra;
         this.vegetariano = vegetariano;
-        this.usuario = usuario;
-        this.fecha = fecha;
-    }
-    public Date getFecha() {
-        return this.fecha;
-    }
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
     }
     public Usuario getUsuario() {
         return this.usuario;

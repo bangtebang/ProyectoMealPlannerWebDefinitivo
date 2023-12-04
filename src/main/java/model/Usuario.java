@@ -10,7 +10,7 @@ public class Usuario {
     private String telefono;
     private String direccion;
     private String sexo;
-    public Usuario(String nombre, int edad, String rut,String sexo, int peso, double estatura, String email, String telefono, String direccion) {
+    public Usuario(String nombre, int edad, String rut,String sexo,int peso, double estatura, String email, String telefono, String direccion) {
         this.nombre = nombre;
         this.edad = edad;
         this.rut = rut;
