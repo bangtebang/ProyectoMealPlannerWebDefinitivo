@@ -48,10 +48,10 @@ public class RegistroAlimentoServlet extends HttpServlet {
                 double sodio = Double.parseDouble(req.getParameter("sodio"));
                 double fibra = Double.parseDouble(req.getParameter("fibra"));
                 boolean vegetariano = Boolean.parseBoolean(req.getParameter("vegetariano"));
-                Alimento alimento = new Alimento(nombre, calorias, gramos, proteinas, hidratosDeCarbono, azucares, sodio, fibra, vegetariano);
+                Alimento alimento = new Alimento(nombre,calorias, gramos, proteinas, hidratosDeCarbono, azucares, sodio, fibra, vegetariano);
                 if (agregarAlimento(alimento)) {
                     req.setAttribute("alimento",alimento);
-                    respuesta = req.getRequestDispatcher("registroValido.jsp");
+                    respuesta = req.getRequestDispatcher("registroValidoAlimento.jsp");
                 }
             }
         } catch (NumberFormatException e) {

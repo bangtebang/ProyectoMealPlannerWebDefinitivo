@@ -10,22 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo correcciones">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/mealplanner.r5zWqQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/mealplannerbd.MTmijg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroUsuarioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroUsuarioServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Alimento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Alimento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimentoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimentoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registroAlimento.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroAlimento.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registroUsuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroUsuario.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +229,7 @@
       <workItem from="1701620541071" duration="1327000" />
       <workItem from="1701650979346" duration="1284000" />
       <workItem from="1701652291068" duration="2727000" />
-      <workItem from="1701655048701" duration="4834000" />
+      <workItem from="1701655048701" duration="5608000" />
     </task>
     <task id="LOCAL-00001" summary="subo rama master">
       <option name="closed" value="true" />
@@ -334,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701654561599</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="subo correcciones">
+      <option name="closed" value="true" />
+      <created>1701659922041</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701659922041</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
