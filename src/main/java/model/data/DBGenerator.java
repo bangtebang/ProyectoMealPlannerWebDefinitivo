@@ -17,6 +17,8 @@ public class DBGenerator {
         create = actualizarConexion(connection,nombreBD);
         crearTablaUsuario(create);
         crearTablaAlimento(create);
+        crearTablaAlimentoUsuario(create);
+        relacionarTabla(create,"AlimentoUsuario","rut","Usuario");
         DBConnector.closeConnection();
     }
     public static DSLContext conectarBD(String nombre) throws ClassNotFoundException {
@@ -60,6 +62,25 @@ public class DBGenerator {
                 .column("fecha",TIMESTAMP)
                 .constraint(primaryKey("nombre")).execute();
     }
+    private static void crearTablaAlimentoUsuario(DSLContext create){
+        create.createTableIfNotExists("AlimentoUsuario").column("rut",VARCHAR(50))
+                .column("nombre",VARCHAR(100))
+                .column("calorias",DOUBLE)
+                .column("gramos",DOUBLE)
+                .column("proteinas",DOUBLE)
+                .column("hidratosDeCarbono",DOUBLE)
+                .column("azucares",DOUBLE)
+                .column("sodio",DOUBLE)
+                .column("fibra",DOUBLE)
+                .column("vegetariano",BOOLEAN)
+                .column("fecha",TIMESTAMP)
+                .constraint(primaryKey("rut","nombre","fecha")).execute();
+    }
+    private static void relacionarTabla(DSLContext create, String nombreTabla, String claveForanea, String nombreTablaRelacion){
+        create.alterTableIfExists(nombreTabla).add(foreignKey(claveForanea).references(nombreTablaRelacion)).execute();
+        create.alterTableIfExists(nombreTabla).alterConstraint(foreignKey(claveForanea).references(nombreTablaRelacion)).enforced();
+    }
+
     private static void agregarColumnaTabla(DSLContext create, String nombreTabla, String columna, DataType tipoColumna){
         create.alterTableIfExists(nombreTabla).addColumn(columna,tipoColumna);
     }
