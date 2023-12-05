@@ -1,5 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<style>
+    body {
+        background-image: url(https://img.freepik.com/fotos-premium/mantel-cocina-cuadros-rojos-blancos-sobre-mesa-madera_887552-21108.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+</style>
 <head> <title>Alimento Consumido</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>

@@ -9,17 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo codigo con la">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AsociarAlimentoUsuarioServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/asociarAlimentoUsuario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/mealplanner.r5zWqQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/mealplanner.r5zWqQ.meta" afterDir="false" />
+    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo codigo corregido">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimentoUsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimentoUsuarioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/UsuarioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registroValidoAlimento.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroValidoAlimento.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,6 +236,7 @@
       <workItem from="1701650979346" duration="1284000" />
       <workItem from="1701652291068" duration="2727000" />
       <workItem from="1701655048701" duration="17027000" />
+      <workItem from="1701739651111" duration="2704000" />
     </task>
     <task id="LOCAL-00001" summary="subo rama master">
       <option name="closed" value="true" />
@@ -365,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701666315468</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="subo codigo corregido">
+      <option name="closed" value="true" />
+      <created>1701739751543</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701739751543</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,6 +396,7 @@
     <MESSAGE value="subo creacion de alimento momentaneo sin fecha aun" />
     <MESSAGE value="subo codigo corregido para poder crear alimentos y que se agregue el atributo fecha al momento de agregarlos" />
     <MESSAGE value="subo codigo con una nueva clase llamada AlimentoUsuario la cual otorgara la posibilidad de enlazar al usario con un alimento y ese &quot;alimentoUsuario&quot; podra copiar sus atributos de los objetos de la clase &quot;Alimento&quot; como una especie de catologo" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo codigo con una nueva clase llamada AlimentoUsuario la cual otorgara la posibilidad de enlazar al usario con un alimento y ese &quot;alimentoUsuario&quot; podra copiar sus atributos de los objetos de la clase &quot;Alimento&quot; como una especie de catologo" />
+    <MESSAGE value="subo codigo corregido" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo codigo corregido" />
   </component>
 </project>
