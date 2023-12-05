@@ -1,0 +1,139 @@
+.encabezado {
+    font-size: 300%;
+    text-align: center;
+    font-family: "Arial Black";
+}
+
+.centrado {
+    text-align: center;
+    align-content: center;
+    font-family: "Arial";
+    font-size: 150%;
+}
+
+.subtitulo {
+    text-align: center;
+    font-family: "Arial Narrow";
+    font-size: 200%;
+}
+
+.boton {
+    height: 5%;
+    width: 10%;
+    color: #0693e3; /* Color azul similar al otro código */
+    font-size: 100%;
+    align-content: center;
+}
+
+.campoTexto {
+    width: 10%;
+    height: 3%;
+}
+
+/* Colores similares al otro código */
+
+.navbar {
+    overflow: hidden;
+    background-color: #962828;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000; /* Color negro similar al otro código */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: #000; /* Color negro similar al otro código */
+}
+
+.search-container {
+    float: right;
+    margin-top: 8px;
+}
+
+.search-container input[type="text"] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    margin-right: 4px;
+}
+
+.search-container button {
+    padding: 6px 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.col {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.col a {
+    text-decoration: none;
+    color: #000; /* Color negro similar al otro código */
+}
+
+.col h2 {
+    margin-top: 20px;
+}
+
+.col p {
+    font-size: 16px;
+}
+
+.bg-red {
+    background-color: #cf2e2e;
+}
+
+.bg-blue {
+    background-color: #0693e3; /* Color azul similar al otro código */
+}
+
+.half-container-left,
+.half-container-right {
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Color blanco similar al otro código */
+}
+
+.half-container-left img,
+.half-container-right img {
+    width: 50px;
+    height: 50px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background-image: url(https://img.freepik.com/fotos-premium/mantel-cocina-cuadros-rojos-blancos-sobre-mesa-madera_887552-21108.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #000; /* Color negro similar al otro código */
+    text-align: center;
+}
+
+.intro h1 {
+    margin-top: 0;
+}
