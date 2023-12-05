@@ -4,7 +4,7 @@
     body {
         background-image: url(https://img.freepik.com/fotos-premium/mantel-cocina-cuadros-rojos-blancos-sobre-mesa-madera_887552-21108.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;}
 </style>
 <head> <title>Registro Alimento</title>
     <link rel="stylesheet" type="text/css" href="styles.css">

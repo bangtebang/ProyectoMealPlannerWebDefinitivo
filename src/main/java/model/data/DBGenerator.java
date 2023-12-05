@@ -17,8 +17,6 @@ public class DBGenerator {
         create = actualizarConexion(connection,nombreBD);
         crearTablaUsuario(create);
         crearTablaAlimento(create);
-        crearTablaAlimentoUsuario(create);
-        relacionarTabla(create,"AlimentoUsuario","rut","Usuario");
         DBConnector.closeConnection();
     }
     public static DSLContext conectarBD(String nombre) throws ClassNotFoundException {
