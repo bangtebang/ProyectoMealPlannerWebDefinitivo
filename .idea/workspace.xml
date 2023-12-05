@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo mejora visual">
+    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo codigo corregido">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/asociarAlimentoUsuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/asociarAlimentoUsuario.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/registroAlimento.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroAlimento.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/registroErroneo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroErroneo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registroUsuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroUsuario.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/registroValido.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroValido.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/registroValidoAlimento.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroValidoAlimento.jsp" afterDir="false" />
     </list>
@@ -129,7 +128,8 @@
   <component name="RunManager">
     <configuration name="Tomcat 10.1.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.16" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ProyectoMealPlannerWebDefinitivo" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="ProyectoMealPlannerWebDefinitivo:war exploded">
           <settings>
@@ -241,7 +241,7 @@
       <workItem from="1701650979346" duration="1284000" />
       <workItem from="1701652291068" duration="2727000" />
       <workItem from="1701655048701" duration="17027000" />
-      <workItem from="1701739651111" duration="3424000" />
+      <workItem from="1701739651111" duration="4180000" />
     </task>
     <task id="LOCAL-00001" summary="subo rama master">
       <option name="closed" value="true" />
@@ -379,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701742623439</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="subo codigo corregido">
+      <option name="closed" value="true" />
+      <created>1701743290375</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701743290375</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,8 +417,8 @@
     <MESSAGE value="subo creacion de alimento momentaneo sin fecha aun" />
     <MESSAGE value="subo codigo corregido para poder crear alimentos y que se agregue el atributo fecha al momento de agregarlos" />
     <MESSAGE value="subo codigo con una nueva clase llamada AlimentoUsuario la cual otorgara la posibilidad de enlazar al usario con un alimento y ese &quot;alimentoUsuario&quot; podra copiar sus atributos de los objetos de la clase &quot;Alimento&quot; como una especie de catologo" />
-    <MESSAGE value="subo codigo corregido" />
     <MESSAGE value="subo mejora visual" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo mejora visual" />
+    <MESSAGE value="subo codigo corregido" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo codigo corregido" />
   </component>
 </project>
