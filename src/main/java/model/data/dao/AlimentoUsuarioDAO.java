@@ -23,7 +23,7 @@ public class AlimentoUsuarioDAO {
         query.update(DSL.table("AlimentoUsuario")).set(DSL.field(columnaTabla),dato).
                 where(DSL.field("nombre").eq(rut)).execute();
     }
-    public static List obtenerAlimento(DSLContext query, String columnaTabla, Object dato){
+    public static List obtenerAlimentoUsuario(DSLContext query, String columnaTabla, Object dato){
         Result resultados = query.select().from(DSL.table("AlimentoUsuario")).where(DSL.field(columnaTabla).eq(dato)).fetch();
         return obtenerListaAlimentosUsuarios(resultados);
     }

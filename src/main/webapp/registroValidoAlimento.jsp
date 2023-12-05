@@ -10,7 +10,7 @@
     <p class="subtitulo">Registro exitoso</p> <br>
     <label class="campoTexto"> Nombre : <c:out value="${alimento.getNombre()}"></c:out> </label>
     <br>
-    <label class="campoTexto">fecha: <c:out value="${alimento.getGramos()}"></c:out></label>
+    <label class="campoTexto">fecha: <c:out value="${alimento.getFecha()}"></c:out></label>
     <a class="boton" href="index.jsp">Volver</a>
 </div>
 </html>

@@ -9,11 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo codigo corregido para poder crear alimentos y que se agregue el atributo fecha al momento de agregarlos">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/AlimentoUsuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimentoUsuarioDAO.java" afterDir="false" />
+    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo codigo con la">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AsociarAlimentoUsuarioServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/asociarAlimentoUsuario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/mealplanner.r5zWqQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/mealplanner.r5zWqQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimentoUsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/AlimentoUsuarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/UsuarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registroValidoAlimento.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroValidoAlimento.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +124,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\esteb\IdeaProjects\ProyectoMealPlannerWebDefinitivo\src\main\webapp" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.16" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ProyectoMealPlannerWebDefinitivo" />
@@ -232,7 +243,7 @@
       <workItem from="1701620541071" duration="1327000" />
       <workItem from="1701650979346" duration="1284000" />
       <workItem from="1701652291068" duration="2727000" />
-      <workItem from="1701655048701" duration="10857000" />
+      <workItem from="1701655048701" duration="17027000" />
     </task>
     <task id="LOCAL-00001" summary="subo rama master">
       <option name="closed" value="true" />
@@ -346,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701663002542</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="subo codigo con una nueva clase llamada AlimentoUsuario la cual otorgara la posibilidad de enlazar al usario con un alimento y ese &quot;alimentoUsuario&quot; podra copiar sus atributos de los objetos de la clase &quot;Alimento&quot; como una especie de catologo">
+      <option name="closed" value="true" />
+      <created>1701666315468</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701666315468</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +394,7 @@
     <MESSAGE value="subo correcciones" />
     <MESSAGE value="subo creacion de alimento momentaneo sin fecha aun" />
     <MESSAGE value="subo codigo corregido para poder crear alimentos y que se agregue el atributo fecha al momento de agregarlos" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo codigo corregido para poder crear alimentos y que se agregue el atributo fecha al momento de agregarlos" />
+    <MESSAGE value="subo codigo con una nueva clase llamada AlimentoUsuario la cual otorgara la posibilidad de enlazar al usario con un alimento y ese &quot;alimentoUsuario&quot; podra copiar sus atributos de los objetos de la clase &quot;Alimento&quot; como una especie de catologo" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo codigo con una nueva clase llamada AlimentoUsuario la cual otorgara la posibilidad de enlazar al usario con un alimento y ese &quot;alimentoUsuario&quot; podra copiar sus atributos de los objetos de la clase &quot;Alimento&quot; como una especie de catologo" />
   </component>
 </project>

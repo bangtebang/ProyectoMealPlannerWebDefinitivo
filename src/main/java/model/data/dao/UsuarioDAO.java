@@ -34,6 +34,20 @@ public class UsuarioDAO {
         Table tablaUsuario= table(name("Usuario"));
         query.delete(DSL.table("Usuario")).where(DSL.field("rut").eq(rut)).execute();
     }
+    public static Usuario buscarUsuario(DSLContext query, Object dato){
+        Result resultados= (Result) buscarUsuario(query,"rut");
+        String rut = (String) resultados.getValue(0,"rut");
+        String nombre = (String) resultados.getValue(0,"nombre");
+        int edad = (int) resultados.getValue(0,"edad");
+        String sexo = (String) resultados.getValue(0,"sexo");
+        int peso = (int) resultados.getValue(0,"peso");
+        double estatura = (double) resultados.getValue(0,"estatura");
+        String email = (String) resultados.getValue(0,"email");
+        String telefono = (String) resultados.getValue(0,"telefono");
+        String direccion = (String) resultados.getValue(0,"direccion");
+        return new Usuario(nombre,edad,rut,sexo,peso,estatura,email,telefono,direccion);
+    }
+
     private static List obtenerListaUsarios(Result resultados){
         List<Usuario> usuarios= new ArrayList<>();
         for(int fila=0; fila<resultados.size();fila++){
