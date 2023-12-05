@@ -9,13 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo codigo mejorado">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/mealplanner.r5zWqQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d310d3ab-0b36-462b-973e-14a62a3af6ec/storage_v2/_src_/schema/mealplanner.r5zWqQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegistroAlimentoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/catalogo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/catalogo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registroAlimento.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registroAlimento.jsp" afterDir="false" />
+    <list default="true" id="93a2bb3f-767c-4d13-ab65-4f04de8b02dc" name="Changes" comment="subo codigo final pero con posibles futuras mejora para poder enlazar bien">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/asociarAlimentoUsuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/asociarAlimentoUsuario.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +236,7 @@
       <workItem from="1701650979346" duration="1284000" />
       <workItem from="1701652291068" duration="2727000" />
       <workItem from="1701655048701" duration="17027000" />
-      <workItem from="1701739651111" duration="5615000" />
+      <workItem from="1701739651111" duration="5922000" />
     </task>
     <task id="LOCAL-00001" summary="subo rama master">
       <option name="closed" value="true" />
@@ -395,7 +390,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701743916016</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="subo codigo final pero con posibles futuras mejora para poder enlazar bien">
+      <option name="closed" value="true" />
+      <created>1701745482527</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1701745482527</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,6 +431,7 @@
     <MESSAGE value="subo mejora visual" />
     <MESSAGE value="subo codigo corregido" />
     <MESSAGE value="subo codigo mejorado" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo codigo mejorado" />
+    <MESSAGE value="subo codigo final pero con posibles futuras mejora para poder enlazar bien" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo codigo final pero con posibles futuras mejora para poder enlazar bien" />
   </component>
 </project>
