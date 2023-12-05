@@ -12,6 +12,16 @@
     <meta charset="UTF-8">
     <title>Catálogo de Productos</title>
     <style>
+        body {
+            background-image: url(https://img.freepik.com/fotos-premium/mantel-cocina-cuadros-rojos-blancos-sobre-mesa-madera_887552-21108.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            .product {
+                border: 1px solid #1f8377;
+                padding: 10px;
+                margin-bottom: 10px;
+                background-color: rgba(255, 255, 255, 0.7); /* Ajusta el último valor (0.7) para la opacidad */
+            }}
         .product {
             border: 1px solid #1f8377;
             padding: 10px;

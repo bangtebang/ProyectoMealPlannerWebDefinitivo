@@ -81,7 +81,7 @@
         <input name="peso" type="number" class="campoTexto">
 
         <label>Estatura:</label>
-        <input name="estatura" type="number" class="campoTexto">
+        <input name="estatura" type="number" class="campoTexto" step="0.01" >
 
         <label>email:</label>
         <input name="email" type="email" class="campoTexto">

@@ -98,7 +98,6 @@ public class RegistroAlimentoServlet extends HttpServlet {
 
     private boolean agregarAlimento(Alimento alimento) throws ClassNotFoundException {
         DSLContext query = DBGenerator.conectarBD("MealPlanner");
-        Usuario usuario = UsuarioDAO.buscarUsuario(query, "rut");
         List<Alimento> alimentos = AlimentoDAO.obtenerAlimento(query, "nombre", alimento.getNombre());
         if (alimentos.size() != 0) {
             return false;
